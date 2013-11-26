@@ -2,7 +2,7 @@
 
 - name: Build | Make sure essential build/dev tools and compilers are installed/up-to-date
   sudo: yes
-  apt: pkg={{item}}
+  apt: pkg={{item}} update_cache=yes
   with_items:
     - ack
     - acl
